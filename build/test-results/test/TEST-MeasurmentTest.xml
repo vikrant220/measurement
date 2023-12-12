@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MeasurmentTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-12-12T07:29:35" hostname="1222LTPB0084981.local" time="0.018">
+<testsuite name="MeasurmentTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-12-12T09:28:01" hostname="1222LTPB0084981.local" time="0.01">
   <properties/>
-  <testcase name="shouldBeTrueIfOneIs1MetersOtherOneIs1000Centimeter()" classname="MeasurmentTest" time="0.011"/>
-  <testcase name="ShouldBeTrueIfOneIs1000MetersOtherOneIs1KMWithString()" classname="MeasurmentTest" time="0.0"/>
-  <testcase name="testLengthAsHashMapKey()" classname="MeasurmentTest" time="0.001"/>
-  <testcase name="ShouldBeTrueIfBothAre1000Meters()" classname="MeasurmentTest" time="0.0"/>
-  <testcase name="shouldBeTrueIfOneIs5KilometersOtherOneIs500000Centimeter()" classname="MeasurmentTest" time="0.0"/>
-  <testcase name="shouldBeTrueIfOneIs2KilometersOtherOneIs200000Centimeter()" classname="MeasurmentTest" time="0.001"/>
-  <testcase name="ShouldBeTrueIfOneIs1000MetersOtherOneIs1KM()" classname="MeasurmentTest" time="0.0"/>
-  <testcase name="shouldBeTrueIfOneIs100CentimetersOtherOneIs1Meter()" classname="MeasurmentTest" time="0.0"/>
-  <testcase name="ShouldBeFalseIfOneIs1OtherOneIs2()" classname="MeasurmentTest" time="0.001"/>
+  <testcase name="ShouldBeTrueIfOneIs1000MetersOtherOneIs1KM()" classname="MeasurmentTest" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

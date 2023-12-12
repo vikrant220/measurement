@@ -9,7 +9,8 @@ enum Unit{
 
 
 public class Distance {
-    final private int value;
+    final private double value;
+    final private Unit unit;
     final static public Map<Unit, Integer> map = new HashMap<>();
 
     static {
@@ -20,9 +21,9 @@ public class Distance {
     }
 
 
-    public Distance(int value){
-        this.value = value*100;
-    }
+//    public Distance(int value){
+//        this.value = value*100;
+//    }
 
 //    public  int HashCode(){
 //        return this.value;
@@ -33,7 +34,7 @@ public class Distance {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Distance distance = (Distance) o;
-        return value == distance.value;
+        return value == distance.value && unit == distance.unit;
     }
 
     @Override
@@ -41,8 +42,8 @@ public class Distance {
         return Objects.hash(value);
     }
 
-    public Distance(int value, Unit unit) {
-
+    public Distance(double value, Unit unit) {
+        this.unit = unit;
         this.value = map.get(unit)*value;
 
 //        if(unit == Unit.KM)
@@ -57,8 +58,16 @@ public class Distance {
 
 
 
-    public boolean isEqual(Distance distance2) {
+    public boolean similarEqual(Distance distance2) {
         return (this.value==distance2.value);
     }
 
+    public Distance additionOfDistance(Distance distance2) {
+        Unit unitOfFirstOperand = this.unit;
+        double SumOfDistance = this.value + distance2.value;
+        int Divider = map.get(unitOfFirstOperand);
+        SumOfDistance /= Divider;
+        return new Distance(SumOfDistance, unitOfFirstOperand);
+
+    }
 }
